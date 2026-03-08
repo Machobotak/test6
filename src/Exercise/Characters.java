@@ -12,15 +12,15 @@ public class Characters {
         this.heroClass = heroClass;
         this.gender = gender;
 
-        displayCharinfo();
+        displayCharInfo();
     }
 
-    public void displayCharinfo(){
-        System.out.println("===Character Information===");
-        System.out.println("Name: " + getName());
-        System.out.println("Age: " + getAge());
-        System.out.println("Hero Class: " + getHeroClass());
-        System.out.println("Gender: " + isGender());
+    public void displayCharInfo() {
+        System.out.println("====Character Information====");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Hero Class: " + heroClass);
+        System.out.println("Gender: " + gender);
     }
 
     public String getName() {
