@@ -1,23 +1,23 @@
-package Exercise;
+package KelasG;
 
 public class Characters {
     private String name;
     private int age;
     private String heroClass;
-    private boolean gender;//true female false male
+    private String gender;
 
-    public Characters(String name, int age, boolean gender) {
+    public Characters(String name, int age, String gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
 
-    public void displayCharInfo() {
+    public void displayInfoChar(){
         System.out.println("====Character Information====");
-        System.out.println("Name: " + getName());
-        System.out.println("Age: " + getAge());
-        System.out.println("Hero Class: " + getHeroClass());
-        System.out.println("Gender: " + isGender());
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Hero Class: " + heroClass);
+        System.out.println("Gender: " + gender);
     }
 
     public void attack(){
@@ -45,15 +45,14 @@ public class Characters {
     }
 
     public void setHeroClass(String heroClass) {
-
         this.heroClass = heroClass;
     }
 
-    public boolean isGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 }

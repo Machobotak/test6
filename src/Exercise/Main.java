@@ -2,14 +2,22 @@ package Exercise;
 
 public class Main {
     static void main() {
-        Characters char1 = new Characters();
-        char1.createChar("ayub",19,"mage",false);
-        Characters char2 = new Characters();
-        char2.createChar("budi",19,"fighter",false);
+        Archer archer1 = new Archer("Ayub",12,false,12,"ice");
+        archer1.displayCharInfo();
+        archer1.attack();
+        System.out.println();
 
-        System.out.println(char1.getName());
-        char1.setName("buya");
-        System.out.println(char1.getName());
+        Warrior warrior1 = new Warrior("Ayub",12,false,"excalibur","gold");
+        warrior1.displayCharInfo();
+        warrior1.attack();
+        warrior1.attack("salto");
+        System.out.println();
+
+        Mage mage1 = new Mage("Ayub",12,false,"fire",100000);
+        mage1.displayCharInfo();
+        mage1.attack();
+        mage1.castUltimateSpell("Explosion");
+        System.out.println();
 
     }
 }
